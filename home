@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Align-style Clinic — Demo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">ALIGN<span>Demo</span></a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#blog">Blogs</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+        <a href="#" class="btn-primary">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Transform Your Health with Align</h1>
+          <p>Personalised physiotherapy and rehabilitation to restore movement, relieve pain and help you get back to what matters.</p>
+          <div class="hero-cta">
+            <a href="#services" class="btn-primary">Find out more</a>
+            <a href="#contact" class="btn-outline">Schedule an Appointment</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-placeholder.jpg" alt="clinic hero image">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="muted">Evidence-based treatments to improve mobility, reduce pain and enhance performance.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="images/service-physio.jpg" alt="">
+            <h3>Physiotherapy</h3>
+            <p>Assessment, manual therapy and tailored exercise plans for recovery and prevention.</p>
+            <a href="#" class="link-more">Find out more →</a>
+          </article>
+
+          <article class="card">
+            <img src="images/service-massage.jpg" alt="">
+            <h3>Sports & Deep Tissue Massage</h3>
+            <p>Targeted massage therapies to relieve muscle tension and accelerate recovery.</p>
+            <a href="#" class="link-more">Find out more →</a>
+          </article>
+
+          <article class="card">
+            <img src="images/service-chiro.jpg" alt="">
+            <h3>Chiropractic</h3>
+            <p>Hands-on techniques to restore joint function and reduce pain.</p>
+            <a href="#" class="link-more">Find out more →</a>
+          </article>
+
+          <article class="card">
+            <img src="images/service-needling.jpg" alt="">
+            <h3>Dry Needling</h3>
+            <p>Evidence-based approach for trigger points and muscle pain.</p>
+            <a href="#" class="link-more">Find out more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT + TEAM -->
+    <section id="team" class="section alt-bg">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>About Us</h2>
+            <p>We combine manual therapy, exercise and education so patients become independent in managing their bodies.</p>
+            <a href="#contact" class="btn-primary small">Schedule an Appointment</a>
+          </div>
+          <div>
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+              <div class="team-card">
+                <img src="images/team1.jpg" alt="">
+                <h4>Siôn G. Jones</h4>
+                <p class="muted small">Head of Care — Physiotherapist</p>
+              </div>
+              <div class="team-card">
+                <img src="images/team2.jpg" alt="">
+                <h4>Konstantinos K.</h4>
+                <p class="muted small">Physiotherapist</p>
+              </div>
+              <div class="team-card">
+                <img src="images/team3.jpg" alt="">
+                <h4>Dr. Jena B.</h4>
+                <p class="muted small">Chiropractor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonial">
+          <blockquote>
+            “Excellent care and professional staff — my back pain improved significantly.”
+          </blockquote>
+          <cite>— Samantha B.</cite>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Align Demo Clinic</h3>
+        <p class="muted">Leading physiotherapy & rehabilitation services.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">info@example.com<br>+971 2 000 0000</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="#services">Services</a>
+          <a href="#team">Our Team</a>
+          <a href="#blog">Blogs</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container copyright">
+      © <span id="year"></span> Align Demo — All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // small JS for nav toggle and year
+    document.querySelector('.nav-toggle').addEventListener('click', function(){
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
